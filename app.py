@@ -7,7 +7,7 @@ import re
 import socket
 import json
 from datetime import datetime
-import torch
+#import torch
 
 
 
@@ -19,6 +19,8 @@ app = Flask(__name__)
 def main():
     now = datetime.now()
     dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
+    '''
+    
     try: 
         if not torch.cuda.is_available():
             msg =  "Cuda is available"
@@ -29,8 +31,10 @@ def main():
         return jsonify(msg = 'Hello World', status = 'OK', dataAndTime = dt_string, message = msg)
 
 
-    return jsonify(msg = 'Hello World', status = 'OK', dataAndTime = dt_string, message = msg, device=device_id, noCuda=noCuda)
+    ć message = msg, device=device_id, noCuda=noCuda)
 
+    '''
+    return jsonify(msg = 'Hello World', status = 'OK', dataAndTime = dt_string)
 
 if __name__ == '__main__':
 
