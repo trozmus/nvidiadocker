@@ -3,7 +3,5 @@ cython
 numpy
 flask
 pandas
-pytorch 
-torchvision
 
 
